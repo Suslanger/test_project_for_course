@@ -39,4 +39,5 @@ def test_message_disappeared_after_adding_product_to_basket(browser):
     page = ProductPage(browser, "http://selenium1py.pythonanywhere.com/ru/catalogue/coders-at-work_207/")
     page.open()                      # открываем страницу
     page.add_product_to_basket()
+    time.sleep(1)
     page.should_not_disapear_message() #Проверяем, что нет сообщения об успехе с помощью is_disappeared

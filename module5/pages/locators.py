@@ -8,5 +8,5 @@ class ProductPageLocators():
     PRODUCT_NAME_BASKET = (By.CSS_SELECTOR, "#messages div.alert:nth-child(1) strong")
     PRODUCT_PRICE = (By.CSS_SELECTOR, "div.product_main p")
     PRODUCT_PRICE_BASKET = (By.CSS_SELECTOR, "#messages div.alert:nth-child(3) strong")
-    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#success_messages")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages div.alert:nth-child(1)")
 
